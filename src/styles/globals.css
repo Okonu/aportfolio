@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-white text-gray-900;
+    }
+}
+
+@layer components {
+    .section-transition {
+        @apply transition-all duration-300 ease-in-out;
+    }
+}
