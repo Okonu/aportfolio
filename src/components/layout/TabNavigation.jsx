@@ -2,10 +2,10 @@ import { User, Briefcase, Layout, Code } from 'lucide-react';
 
 const TabNavigation = ({ activeSection, setActiveSection }) => {
     const tabs = [
-        { id: 'about', icon: User, label: 'About' },
-        { id: 'experience', icon: Briefcase, label: 'Experience' },
         { id: 'projects', icon: Layout, label: 'Projects' },
-        { id: 'skills', icon: Code, label: 'Skills' }
+        { id: 'experience', icon: Briefcase, label: 'Experience' },
+        { id: 'skills', icon: Code, label: 'Skills' },
+        { id: 'about', icon: User, label: 'About' }
     ];
 
     return (

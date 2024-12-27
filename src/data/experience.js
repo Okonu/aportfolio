@@ -3,6 +3,8 @@ export const experiences = [
         role: 'Software Engineer',
         company: 'Ethics and Anti-Corruption Commission',
         period: 'Oct 2023 – Nov 2024',
+        type: 'Contract',
+        location: 'Nairobi, KE',
         achievements: [
             'Streamlined budgeting and procurement processes, reducing approval times by 70%',
             'Redesigned system architecture and implemented key logic for budgeting modules',
@@ -14,6 +16,8 @@ export const experiences = [
         role: 'Software Engineer',
         company: 'Reduzer Solutions',
         period: 'June 2024 – Present',
+        type: 'Remote',
+        location: 'Remote',
         achievements: [
             'Optimized system performance and addressed critical bottlenecks',
             'Developed RESTful API endpoints for knowledge base processing',
@@ -25,6 +29,8 @@ export const experiences = [
         role: 'Software Developer',
         company: 'Omart Kenya',
         period: 'May 2021 – April 2023',
+        type: 'Full-time',
+        location: 'Mombasa, KE',
         achievements: [
             'Increased customer satisfaction by 30% through user-driven improvements',
             'Enhanced transaction reliability through robust payment integration',

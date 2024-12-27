@@ -1,3 +1,4 @@
+import { Github, Globe, ExternalLink } from 'lucide-react';
 import CardWrapper from '../shared/CardWrapper';
 import { projects } from '../../data/projects';
 
@@ -14,12 +15,34 @@ const ProjectsSection = () => {
                             </span>
                         </div>
                         <p className="text-gray-600 mb-3">{project.description}</p>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mb-4">
                             {project.tech.map((tech, i) => (
                                 <span key={i} className="text-xs px-2 py-1 bg-gray-50 rounded-md">
                                     {tech}
                                 </span>
                             ))}
+                        </div>
+                        {/* Project Links */}
+                        <div className="flex gap-4 mt-4 pt-4 border-t border-gray-100">
+                            {project.github && (
+                                <a href={project.github} target="_blank" rel="noopener noreferrer"
+                                   className="text-gray-600 hover:text-blue-600">
+                                    <Github className="w-5 h-5" />
+                                </a>
+                            )}
+                            {project.demo && (
+                                <a href={project.demo} target="_blank" rel="noopener noreferrer"
+                                   className="text-gray-600 hover:text-blue-600">
+                                    <Globe className="w-5 h-5" />
+                                </a>
+                            )}
+                            {project.details && (
+                                <a href={project.details} target="_blank" rel="noopener noreferrer"
+                                   className="text-gray-600 hover:text-blue-600 flex items-center gap-1">
+                                    <span>View Details</span>
+                                    <ExternalLink className="w-4 h-4" />
+                                </a>
+                            )}
                         </div>
                     </CardWrapper>
                 ))}
