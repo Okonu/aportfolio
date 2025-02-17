@@ -2,7 +2,7 @@ export const experiences = [
     {
         role: 'Software Engineer',
         company: 'Ethics and Anti-Corruption Commission',
-        period: 'Oct 2023 – Nov 2024',
+        period: 'Oct 2023 – Present',
         type: 'Contract',
         location: 'Nairobi, KE',
         achievements: [
@@ -15,8 +15,8 @@ export const experiences = [
     {
         role: 'Software Engineer',
         company: 'Reduzer Solutions',
-        period: 'June 2024 – Present',
-        type: 'Remote',
+        period: 'June 2024 – Dec 2024',
+        type: 'Contract',
         location: 'Remote',
         achievements: [
             'Optimized system performance and addressed critical bottlenecks',

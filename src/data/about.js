@@ -1,12 +1,12 @@
 export const aboutData = {
-    bio: "Backend Engineer with extensive experience in cloud computing and system optimization. Based in Nairobi, Kenya, I specialize in building scalable solutions that make a difference.",
+    bio: "Backend Engineer with extensive experience in cloud computing, system architecture, and optimization. I specialize in designing and implementing scalable solutions to solve complex business challenges.",
 
     education: [
         {
             degree: "B.Sc. Math and Computer Science",
             school: "Technical University of Mombasa",
-            period: "2017–2020",
-            details: "Pure Math Major (deferred)"
+            period: "2017–2021",
+            details: "A major in Pure Mathematics and a strong focus on computer science fundamentals."
         }
     ],
 
@@ -16,33 +16,15 @@ export const aboutData = {
     ],
 
     certifications: [
-        {
-            title: "Data Protection and Governance",
-            issuer: "Strathmore University",
-            year: "2024"
-        },
-        {
-            title: "Google Cloud Platform",
-            issuer: "Google Africa Developer Scholarships",
-            year: "2021"
-        }
+        { title: "Data Protection and Governance", issuer: "Strathmore University", year: "2024" },
+        { title: "Google Cloud Platform", issuer: "Google Africa Developer Scholarships", year: "2021" },
+        { title: "Agile Project Management with Microsoft Project", issuer: "LinkedIn", year: "2022" },
+        { title: "Cloud Architecture: Core Concepts", issuer: "LinkedIn", year: "2022" },
+        { title: "Data Science & AI Fundamentals", issuer: "DataKind", year: "2023" }
     ],
 
     courses: [
-        {
-            title: "Diploma in ICT Management",
-            issuer: "Alison",
-            year: "2021"
-        }
-    ],
-
-    licenses: [
-        {
-            title: "AWS Certified Solutions Architect",
-            issuer: "Amazon Web Services",
-            year: "2023",
-            status: "Active"
-        }
+        { title: "Diploma in ICT Management", issuer: "Alison Online", year: "2021" }
     ],
 
     communityEngagements: [
@@ -51,9 +33,9 @@ export const aboutData = {
             organization: "OnlyDevs Community Mombasa",
             period: "2022 - 2024",
             achievements: [
-                "Established peer-to-peer learning programs",
-                "Led community initiatives",
-                "Secured two key sponsorships"
+                "Established peer-to-peer learning programs and organized hackathons",
+                "Secured two major sponsorships to support community initiatives",
+                "Led stakeholder engagements to grow the developer ecosystem"
             ]
         },
         {
@@ -61,8 +43,8 @@ export const aboutData = {
             organization: "Google",
             period: "2023",
             achievements: [
-                "Guided participants through course material",
-                "Provided support in understanding and applying concepts"
+                "Guided participants through Google Cloud Platform course material",
+                "Provided technical mentorship and support to over 100 participants"
             ]
         }
     ]
