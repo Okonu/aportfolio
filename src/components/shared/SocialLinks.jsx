@@ -3,9 +3,9 @@ import { Github, Linkedin, BookOpen, Terminal } from 'lucide-react';
 const SocialLinks = () => {
     const links = [
         { icon: Github, url: 'https://github.com/okonu', label: 'GitHub' },
-        { icon: Linkedin, url: 'https://linkedin.com/in/okonu', label: 'LinkedIn' },
-        { icon: BookOpen, url: 'https://medium.com/@yourusername', label: 'Blog' },
-        { icon: Terminal, url: 'https://hashnode.com/@yourusername', label: 'Hashnode' }
+        { icon: Linkedin, url: 'https://www.linkedin.com/in/okonu/', label: 'LinkedIn' },
+        { icon: BookOpen, url: 'https://medium.com/@theweirdo', label: 'Blog' },
+        { icon: Terminal, url: 'https://okonu.hashnode.dev/', label: 'Hashnode' }
     ];
 
     return (

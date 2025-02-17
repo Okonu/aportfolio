@@ -1,64 +1,72 @@
-import CardWrapper from '../shared/CardWrapper';
-import { ChevronRight, MapPin } from 'lucide-react';
+import { Briefcase, MapPin } from 'lucide-react';
 import { experiences } from '../../data/experience';
-
-const getTypeStyle = (type) => {
-    switch (type.toLowerCase()) {
-        case 'remote':
-            return 'bg-green-100 text-green-800';
-        case 'contract':
-            return 'bg-blue-100 text-blue-800';
-        case 'volunteer':
-            return 'bg-purple-100 text-purple-800';
-        case 'consultancy':
-            return 'bg-yellow-100 text-yellow-800';
-        default:
-            return 'bg-gray-100 text-gray-800';
-    }
-};
 
 const ExperienceSection = () => {
     return (
-        <div className="p-6">
-            <div className="relative">
-                <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+        <div className="py-16 max-w-5xl mx-auto px-4">
+            <div className="space-y-12">
+                <div className="text-center mb-10">
+                    <div className="inline-flex items-center gap-3 border-b-2 border-gray-800 pb-2">
+                        <Briefcase className="w-6 h-6 text-gray-700" />
+                        <h2 className="text-2xl font-semibold text-gray-800">Professional Journey</h2>
+                    </div>
+                </div>
 
-                <div className="space-y-8">
-                    {experiences.map((exp, index) => (
-                        <div key={index} className="relative flex items-start">
-                            <div className="absolute left-8 -translate-x-1/2 w-4 h-4 bg-white border-2 border-gray-300 rounded-full"></div>
-
-                            <div className="ml-16 flex-1">
-                                <CardWrapper className="hover:border-gray-300 transition-colors">
-                                    <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
-                                        <div>
-                                            <div className="flex items-center gap-2 mb-1">
-                                                <h3 className="font-mono font-bold">{exp.role}</h3>
-                                                <span className={`text-xs px-2 py-1 rounded-full ${getTypeStyle(exp.type)}`}>
-                                                    {exp.type}
-                                                </span>
-                                            </div>
-                                            <p className="text-gray-600">{exp.company}</p>
-                                            <div className="flex items-center gap-1 mt-1 text-sm text-gray-500">
-                                                <MapPin className="w-4 h-4" />
-                                                <span>{exp.location}</span>
-                                            </div>
-                                        </div>
-                                        <span className="text-sm text-gray-500 whitespace-nowrap">{exp.period}</span>
-                                    </div>
-                                    <ul className="space-y-2">
-                                        {exp.achievements.map((achievement, i) => (
-                                            <li key={i} className="flex items-start space-x-2">
-                                                <ChevronRight className="w-4 h-4 mt-1 text-gray-400 flex-shrink-0" />
-                                                <span className="text-gray-600">{achievement}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </CardWrapper>
+                {experiences.map((exp, index) => (
+                    <div
+                        key={index}
+                        className="
+                            grid md:grid-cols-3 gap-6
+                            border-l-4 border-gray-200
+                            pl-6 md:pl-0
+                            relative
+                            before:absolute before:left-0 before:top-2
+                            before:w-4 before:h-4 before:bg-gray-300
+                            before:rounded-full
+                        "
+                    >
+                        <div className="md:text-right pr-6 hidden md:block">
+                            <p className="text-sm text-gray-500">{exp.period}</p>
+                            <div className="flex md:justify-end items-center gap-2 text-gray-600 text-sm mt-1">
+                                <MapPin className="w-4 h-4 text-gray-400" />
+                                <span>{exp.location}</span>
                             </div>
                         </div>
-                    ))}
-                </div>
+
+                        <div className="md:col-span-2 space-y-4">
+                            <div>
+                                <h3 className="text-xl font-medium text-gray-800">{exp.role}</h3>
+                                <p className="text-gray-600">{exp.company}</p>
+
+                                {/* Mobile Location and Period */}
+                                <div className="md:hidden flex items-center gap-3 text-sm text-gray-500 mt-2">
+                                    <div className="flex items-center gap-1">
+                                        <MapPin className="w-4 h-4" />
+                                        <span>{exp.location}</span>
+                                    </div>
+                                    <span>•</span>
+                                    <span>{exp.period}</span>
+                                </div>
+                            </div>
+
+                            <ul className="space-y-2 text-gray-600 text-sm">
+                                {exp.achievements.map((achievement, i) => (
+                                    <li
+                                        key={i}
+                                        className="
+                                            relative pl-5
+                                            before:absolute before:left-0 before:top-2
+                                            before:w-2 before:h-2 before:bg-gray-400
+                                            before:rounded-full
+                                        "
+                                    >
+                                        {achievement}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );
