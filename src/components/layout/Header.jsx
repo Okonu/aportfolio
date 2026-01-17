@@ -19,13 +19,25 @@ const Header = () => {
                         </h1>
 
                         <p className="text-base text-gray-600 max-w-xl mx-auto">
-                            Backend Engineer passionate about building scalable, innovative solutions that solve real-world challenges
+                            AI & Automation Engineer specializing in building intelligent systems that transform business processes through cutting-edge AI and automation solutions
                         </p>
                     </div>
 
                     {/* Social Links */}
                     <div className="pt-2">
                         <SocialLinks />
+                    </div>
+
+                    {/* Book Meeting Button */}
+                    <div className="pt-4">
+                        <a
+                            href="https://synqs.site/book/okonu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-6 py-2 bg-gray-800 text-white text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors"
+                        >
+                            Book a Meeting
+                        </a>
                     </div>
                 </div>
 

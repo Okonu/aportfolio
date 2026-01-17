@@ -1,10 +1,18 @@
 export const skills = {
-    languages: ['PHP', 'Python', 'JavaScript', 'SQL', 'TypeScript', 'Node.js'],
-    frameworks: ['Laravel', 'Vue', 'Express', 'Django', 'Flask'],
-    tools: ['Docker', 'AWS', 'GCP', 'Git', 'Jenkins', 'Kubernetes', 'Grafana'],
-    databases: ['MySQL', 'PostgreSQL', 'MongoDB', 'Microsoft SQL Server'],
-    platforms: ['Azure', 'Firebase', 'Apache Kafka', 'Linux'],
+    aiAndAutomation: ['OpenAI APIs', 'LangChain', 'LLM Orchestration', 'Agent-based Systems', 'RAG Pipelines', 'Vector Search', 'Workflow Automation', 'Real-time Inference', 'n8n', 'Ollama', 'Speech Recognition'],
+    mlAndData: ['TensorFlow', 'PyTorch', 'Embeddings', 'Fine-tuning', 'Sentiment Analysis', 'NLP Pipelines', 'ChromaDB', 'Pinecone'],
+    languages: ['Python', 'TypeScript', 'JavaScript', 'Golang', 'Node.js'],
+    frameworks: ['FastAPI', 'Laravel', 'Express', 'Flask', 'Vue.js', 'React', 'Inertia.js', 'Tailwind CSS'],
+    infrastructure: ['Docker', 'Kubernetes', 'AWS', 'GCP', 'Azure', 'Git Integration', 'Linux'],
+    databases: ['PostgreSQL', 'MongoDB', 'MySQL', 'SQLite', 'ChromaDB'],
     talks: [
+        {
+            title: 'APIs with Generative AI: Enhancing Error Feedback Using AI',
+            event: 'AWS Community Day - Kenya',
+            location: 'Nairobi',
+            year: '2024',
+            link: null
+        },
         {
             title: 'Securing APIs through Proper Cache Management',
             event: 'API Festival',

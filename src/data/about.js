@@ -1,5 +1,5 @@
 export const aboutData = {
-    bio: "Backend Engineer with extensive experience in cloud computing, system architecture, and optimization. I specialize in designing and implementing scalable solutions to solve complex business challenges.",
+    bio: "AI & Automation Engineer | ML-Driven Systems Specialist. Software Engineer with 7+ years of experience building secure, intelligent systems with a strong focus on AI, machine learning, automation, and developer tooling. Expert in designing context-aware infrastructure, LLM-powered systems, and scalable backend architectures. Adept in Python, TypeScript, containerized workflows, and vector-based retrieval systems. Passionate about simplifying complex processes using AI-first architectures and enabling teams through automation, orchestration, and actionable data.",
 
     education: [
         {
@@ -54,9 +54,10 @@ export const aboutData = {
             organization: "OnlyDevs Community Mombasa",
             period: "2022 - 2024",
             achievements: [
-                "Established peer-to-peer learning programs and organized hackathons",
-                "Secured two major sponsorships to support community initiatives",
-                "Led stakeholder engagements to grow the developer ecosystem"
+                "Established peer-to-peer learning programs and organized hackathons for 200+ developers",
+                "Designed and delivered AI/automation training workshops, teaching non-technical users to leverage AI tools",
+                "Secured two major sponsorships and built stakeholder relationships to grow the developer ecosystem",
+                "Created hands-on training materials and documentation that enabled knowledge transfer across skill levels"
             ]
         },
         {
@@ -64,8 +65,10 @@ export const aboutData = {
             organization: "Google",
             period: "2023",
             achievements: [
-                "Guided participants through Google Cloud Platform course material",
-                "Provided technical mentorship and support to over 100 participants"
+                "Guided 100+ participants through cloud platform course material using structured training approaches",
+                "Provided technical mentorship focused on practical implementation and real-world application",
+                "Developed simplified explanations for complex technical concepts, improving participant comprehension rates",
+                "Conducted one-on-one coaching sessions and group workshops to ensure successful technology adoption"
             ]
         }
     ],
@@ -103,24 +106,37 @@ export const aboutData = {
         ]
     },
 
-    hackathons: [
-        {
-            "name": "Africa Code Week Hackathon",
-            "period": "2022",
-            "organizer": "Google for Startups",
-            "achievement": "Finalist",
-            "projectName": "EduTech Solution",
-            "description": "Developed an innovative educational technology platform addressing learning accessibility",
-            "technologies": [""],
-            "moreInfoLink": "/"
-        },
+    innovationEcosystemParticipation: [
         {
             "name": "Climate Innovation Hackathon",
-            "period": "2023",
+            "type": "Hackathon",
+            "period": "2021",
             "organizer": "Boost Your Business - Close The Gap Hub",
             "achievement": "Winner - Sustainability Track",
             "projectName": "",
             "description": "Created a Geospatial agricultural footprint tracking and platform",
+            "technologies": [""],
+            "moreInfoLink": "/"
+        },
+        {
+            "name": "Techbridge Invest Accelerator",
+            "type": "Accelerator",
+            "period": "2022",
+            "organizer": "Techbridge Invest",
+            "achievement": "Participant",
+            "projectName": "",
+            "description": "Participated in startup accelerator program focused on tech innovation and scaling",
+            "technologies": [""],
+            "moreInfoLink": "/"
+        },
+        {
+            "name": "Close The Gap Accelerator",
+            "type": "Accelerator",
+            "period": "2022",
+            "organizer": "Boost Your Business",
+            "achievement": "$2,000 USD Grant Recipient",
+            "projectName": "",
+            "description": "Selected for accelerator program with funding support for business development and scaling",
             "technologies": [""],
             "moreInfoLink": "/"
         }

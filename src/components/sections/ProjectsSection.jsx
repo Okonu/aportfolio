@@ -6,7 +6,7 @@ const ProjectsSection = () => {
         <div className="py-16 max-w-5xl mx-auto px-4">
             <div className="text-center mb-12">
                 <h2 className="text-2xl font-semibold text-gray-800 inline-block border-b-2 border-gray-800 pb-2">
-                    Selected Projects
+                    Key Projects
                 </h2>
             </div>
 
@@ -30,7 +30,7 @@ const ProjectsSection = () => {
                             <h3 className="text-xl font-medium text-gray-800">
                                 {project.title}
                             </h3>
-                            {project.status && (
+                            {project.showStatus && project.status && (
                                 <span className="
                                     text-xs
                                     px-2
@@ -67,7 +67,7 @@ const ProjectsSection = () => {
                         </div>
 
                         <div className="flex items-center justify-start gap-4 pt-4 border-t border-gray-100">
-                            {project.github && (
+                            {project.showGithub && project.github && (
                                 <a
                                     href={project.github}
                                     target="_blank"
