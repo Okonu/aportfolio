@@ -3,6 +3,7 @@ export const skills = {
     mlAndData: ['Scikit-learn', 'TensorFlow', 'PyTorch', 'ChromaDB', 'Pinecone', 'FAISS', 'MLOps/LLMOps', 'Model Deployment Pipelines', 'Experiment Tracking', 'Monitoring'],
     cloudPlatforms: ['Azure (AI Foundry, AI Services)', 'AWS (Lambda, S3, EC2)', 'GCP', 'Databricks'],
     languages: ['Python (FastAPI, Flask)', 'TypeScript', 'JavaScript', 'PHP (Laravel)'],
+    frameworks: ['FastAPI', 'Flask', 'React', 'Next.js', 'Laravel', 'Vue.js', 'Express.js'],
     infrastructure: ['Docker', 'Kubernetes', 'GitLab CI/CD', 'Linux', 'Apache Kafka'],
     databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'Microsoft SQL Server'],
     talks: [

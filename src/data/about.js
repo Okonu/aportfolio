@@ -79,7 +79,7 @@ export const aboutData = {
         "undertakings": [
             {
                 "name": "Omart Kenya",
-                "period": "2021 - 2022",
+                "period": "2019 - 2023",
                 "initialConcept": "Sustainable marketplace for circular economy",
                 "result": "Pivoted concept, validated market need for sustainable product exchange",
                 "learningOutcomes": [
